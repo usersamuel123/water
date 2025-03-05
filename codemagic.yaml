@@ -3,7 +3,7 @@ workflows:
     name: Build iOS app
     environment:
       vars:
-        - key: ExQ-w_hkctCu3ZktDbny9SCe-yRi9OjWpKHZYarx
+        - key: EXPO_TOKEN
           value: $ExQ-w_hkctCu3ZktDbny9SCe-yRi9OjWpKHZYarx
     scripts:
       - name: Install dependencies
