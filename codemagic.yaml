@@ -1,11 +1,10 @@
 workflows:
   ios:
     name: Build iOS app
-    max_build_duration: 60
     environment:
       vars:
-        - key: EXPO_TOKEN
-          value: $EXPO_TOKEN
+        - key: ExQ-w_hkctCu3ZktDbny9SCe-yRi9OjWpKHZYarx
+          value: $ExQ-w_hkctCu3ZktDbny9SCe-yRi9OjWpKHZYarx
     scripts:
       - name: Install dependencies
         script: |
@@ -16,9 +15,9 @@ workflows:
           pod install
           cd ..
           react-native run-ios
+
   android:
     name: Build Android app
-    max_build_duration: 60
     scripts:
       - name: Install dependencies
         script: |
@@ -26,3 +25,4 @@ workflows:
       - name: Build Android
         script: |
           react-native run-android
+
